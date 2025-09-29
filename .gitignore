@@ -1,0 +1,77 @@
+# General
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Build directories
+build/
+dist/
+target/
+
+# Dependency directories
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# NATS data directories
+nats-*-data/
+
+# Language specific ignores
+
+# C++ build artifacts
+cpp/build/
+cpp/*.o
+cpp/*.exe
+cpp/*.out
+
+# Java compiled classes
+java/**/*.class
+java/target/
+java/*/target/
+
+# Python bytecode and packages
+python/**/*.pyc
+python/__pycache__/
+python/*.pyc
+python/.pytest_cache/
+
+# JavaScript node modules and packages
+javascript/node_modules/
+javascript/*.log
+*.tgz
+
+# Rust target directory
+rust/target/
+rust/**/*.rs.bk
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp

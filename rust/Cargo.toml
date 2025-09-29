@@ -1,0 +1,21 @@
+[package]
+name = "nats-rust-study"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "app"
+path = "app.rs"
+
+
+[dependencies]
+async-nats = "0.33.0"
+tokio = { version = "1.0", features = ["full"] }
+futures-util = "0.3"
+bytes = "1.0"
+prost = "0.13"
+prost-types = "0.13"
+tokio-stream = "0.1"
+
+[build-dependencies]
+prost-build = "0.13"

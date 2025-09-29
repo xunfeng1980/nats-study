@@ -1,0 +1,2 @@
+nats-py
+protobuf>=6.32.1

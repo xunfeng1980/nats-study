@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package nats_study;
+
+// Talk message for publish/subscribe pattern
+message TalkMessage {
+  string sender_language = 1;
+  string message_text = 2;
+  int64 timestamp = 3;
+}
+
+// Greet request for request/reply pattern
+message GreetRequest {
+  string sender_language = 1;
+  string greeting_text = 2;
+}
+
+// Greet response for request/reply pattern
+message GreetResponse {
+  string response_text = 1;
+  string receiver_language = 2;
+}

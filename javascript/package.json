@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "nats": "^2.29.3"
+  },
+  "devDependencies": {
+    "protobufjs": "^7.5.4",
+    "protobufjs-cli": "^1.1.3"
+  }
+}
