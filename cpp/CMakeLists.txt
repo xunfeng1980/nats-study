@@ -4,15 +4,16 @@ cmake_minimum_required(VERSION 3.15)
 project(nats-cpp-client VERSION 1.0.0 LANGUAGES CXX)
 
 # C++ standard
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Find vcpkg packages
 find_package(cnats CONFIG REQUIRED)
-
-# Find Protobuf
 find_package(Protobuf REQUIRED)
-include_directories(${PROTOBUF_INCLUDE_DIRS})
+find_package(absl CONFIG REQUIRED)
+
+# Include directories
+include_directories(${Protobuf_INCLUDE_DIRS})
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 # Create executable
@@ -24,7 +25,14 @@ add_executable(app
 # Link libraries
 target_link_libraries(app PRIVATE 
     cnats::nats_static
-    ${PROTOBUF_LIBRARIES}
+    protobuf::libprotobuf
+    absl::strings
+    absl::str_format
+    absl::log
+    absl::base
+    absl::synchronization
+    absl::status
+    absl::cord
 )
 
 # Compiler options

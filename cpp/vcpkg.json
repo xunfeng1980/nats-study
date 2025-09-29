@@ -2,6 +2,7 @@
   "name": "nats-cpp-client",
   "version-string": "1.0.0",
   "dependencies": [
-    "cnats"
+    "cnats",
+    "protobuf"
   ]
 }
