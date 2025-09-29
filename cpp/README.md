@@ -26,6 +26,10 @@ This directory contains the C++ implementation of the NATS client.
    export VCPKG_ROOT=/path/to/vcpkg
    ```
 
+> **Note**: This project uses vcpkg version locking to ensure reproducible builds. 
+> Dependencies are locked to specific versions in `vcpkg.json` using a baseline commit 
+> and explicit version overrides.
+
 ## Building
 
 ### Using CMake Presets (recommended)

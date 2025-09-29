@@ -4,5 +4,16 @@
   "dependencies": [
     "cnats",
     "protobuf"
+    ],
+  "builtin-baseline": "2e6fcc44573d091af0321f99c89b212997a76f1f",
+  "overrides": [
+    {
+      "name": "cnats",
+      "version": "3.10.1"
+    },
+    {
+      "name": "protobuf",
+      "version": "5.29.5#2"
+    }
   ]
 }
