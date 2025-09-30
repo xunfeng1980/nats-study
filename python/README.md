@@ -15,5 +15,12 @@ pip install -r requirements.txt
 
 ## Running
 
+Basic NATS client:
 ```bash
 python app.py
+```
+
+JetStream enabled client:
+```bash
+python app-jetstream.py
+```
